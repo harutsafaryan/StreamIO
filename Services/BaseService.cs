@@ -42,9 +42,10 @@ namespace Services
         {
         }
 
-        public virtual void Update(T model)
+        public void Update(T model)
         {
-            throw new NotImplementedException();
+            Remove(model);
+            Add(model);
         }
     }
 }

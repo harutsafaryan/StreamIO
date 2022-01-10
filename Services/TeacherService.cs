@@ -122,12 +122,6 @@ namespace Services
                 stream.Write(b, 0, b.Length);
             }
         }
-
-        public override void Update(Teacher model)
-        {
-            Remove(model);
-            Add(model);
-        }
     }
 }
 

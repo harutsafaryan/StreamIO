@@ -56,6 +56,7 @@ namespace XML
             teacherService.Add(teacher1);
             teacherService.Add(teacher2);
             teacherService.Get(teacher1.Id);
+            Student st =  studentService.Get(student1.Id);
 
             teacher1.Age = 28;
             teacherService.Update(teacher1);
