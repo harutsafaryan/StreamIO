@@ -90,6 +90,11 @@ namespace Services
             }
         }
 
+        public List<Student> GetStudentsByTeacher(Teacher model, IStudentService studentService)
+        {
+            return studentService.GetAll().Where(student => student.TeacherId == model.Id).ToList();
+        }
+
         public override void Remove(Teacher model)
         {
             List<Teacher> teachers = GetAll();

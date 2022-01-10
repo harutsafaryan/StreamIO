@@ -61,6 +61,8 @@ namespace XML
             teacher1.Age = 28;
             teacherService.Update(teacher1);
 
+            List<Student> stL = teacherService.GetStudentsByTeacher(teacher1, studentService);
+
             List<Student> students = studentService.GetAll();
             List<Teacher> teachers = teacherService.GetAll();
         }

@@ -9,5 +9,6 @@ namespace Services
 {
     public interface ITeacherService : IBaseService<Teacher>
     {
+        List<Student> GetStudentsByTeacher(Teacher model, IStudentService studentService);
     }
 }
